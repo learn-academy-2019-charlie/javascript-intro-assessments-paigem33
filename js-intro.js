@@ -79,16 +79,25 @@ var message = "thisisateststring"
 // }
 // console.log(noVow(message))
 // Stretch: Update your function to throw an exception if the argument is not a string.
+// function noVow(string){
+//     if(typeof string !== "string"){
+//         return `Please enter a string only`
+//     } else {
+//       return string.replace(/[aeiou]/gi, '') 
+//     }
+// }
+// console.log(noVow(message))
+// Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
+
 function noVow(string){
     if(typeof string !== "string"){
-        return `Please enter a string only`
+        throw `Enter only a string`
     } else {
        return string.replace(/[aeiou]/gi, '') 
     }
 }
 console.log(noVow(message))
-// Super Duper Stretch: Update your function to throw a TypeError if the argument is not a string.
-//???
+
 // Consider the following variable:
 
 var toonimals = [ {name: 'Itchy', animal: 'mouse'}, {name: 'Stimpy', animal: 'cat'}, {name: 'Daffy', animal: 'duck'}, {name: 'Scratchy', animal: 'cat'}, {name: 'Ren', animal: 'dog'}, {name: 'Felix', animal: 'cat'}]
